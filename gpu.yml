@@ -1,0 +1,10 @@
+jobs:
+  include:
+    - stage: "GPU - with no addons - Windows Build - No Run"
+      name: "with no addons"
+      os: lunix
+      vm:
+        size: 'gpu-medium'
+      arch: 'amd64'
+      script:
+        - echo "No Build"
